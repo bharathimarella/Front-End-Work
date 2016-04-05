@@ -1,0 +1,153 @@
+#container{
+	border:1px solid white;
+	width: 1263px;
+	height:765px;
+	margin-left: 114px;
+}
+#main{
+	border:1px solid white;
+	width: 1263px;
+	height:600px;
+	background-color: #B0E2FF;	
+}
+.sub{
+	border:5px solid white;
+	width: 950px;
+	height:510px;
+	margin-left: 147px;
+	margin-top: 10px;
+	border-radius: 12px 12px 12px 12px;	
+	background-color: #6CA6CD;
+}
+.sub.img1{
+	display: inline-block;
+border-radius: 0px 0px 0px 0px;	
+background-image: url("../Image/logo.png");
+width:141px;
+height:40px;
+margin-top:14px;
+margin-left: 24px;
+}
+.sub.img2{
+	display: inline-block;
+	border:0px;
+padding: 10px 0px 0px 3px;
+color: #A4D3EE;
+font-size: 15px;
+width:217px;
+height:14px;
+margin-top:0px;
+margin-left:0px;
+}
+.sub.img3{
+	border: 0px;
+	display: inline-block;
+	border-radius: 50px 50px 50px 50px;	
+background-image: url("../Image/btn_continue_over.png");
+width:102px;
+height:26px;
+margin-top:14px;
+margin-left: 419px;
+}
+.form{
+	border:3px solid #E9AB17;
+	width: 914px;
+	height:400px;
+	margin-left: 15px;
+	margin-top: 24px;
+	border-radius: 5px 5px 5px 5px;	
+	background-color: white;
+}
+.title{
+	display: inline-block;
+	
+	/**width: 500px;
+	height: 120px;
+	margin-top: 0px;
+	margin-left:225px;**/
+	font-weight: 900;
+	font-size: 35px;
+	font-family: Arial;
+	padding: 10px 242px 0px 248px;
+	color:#E9AB17;
+}
+
+.box{
+	border:1px solid red;
+	font-size: 10px;
+	display:inline-block;
+	background-color: #0D4F8B;
+	border: white;
+	width: 264px;
+	height: 140px;
+	margin-left:27px;
+	margin-top: 34px;
+	border-radius: 10px 10px 10px 10px;
+	padding: 0px 0px 0px 0px;
+}
+.box.text{
+	float:left;
+	
+	font-size: 13px;
+	font-family: Arial;
+	padding: 3px 0px 0px 10px;
+	color:white;
+	height: 13px;
+	width: 229px;
+	margin-top: 3px;
+	margin-left: 11px;
+	/**border:1px solid red;**/
+
+}
+.box.inbox{
+	/**display: inline-block;**/
+	background-color: white;
+	border:white;
+	width: 230px;
+	height: 84px;
+	margin-left:8px;
+	margin-top: 8px;
+	padding: 5px 9px 15px 8px;
+	border-radius: 10px 10px 10px 10px;	
+	font-family: Arial;
+	font-size: 10px;
+}
+.form.inf{
+	border:white;
+	width: 439px;
+	height: 93px;
+	margin-left:222px;
+	margin-top: 20px;
+	border-radius: 0px 0px 0px 0px;
+	background-image: url("../Image/quote_benefits.jpg");
+}
+.title.subtitle{
+	float: left;
+	font-size: 19px;
+	padding: 0px 0px 0px 100px;
+	color: #6CA6CD;
+}
+.table{
+	width: 50px;
+	height: 20px;
+	margin-top: 0px;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+#drop{
+height: 15px;
+font-size: 12px;
+
+}
+#date{
+	padding: 37px 0px 0px 37px;
+}
+.adr{
+	margin-top: 0px;
+}
+.zip{
+	margin-top: 0px;
+	margin-left: 8px;
+	margin-right: 0px;
+}

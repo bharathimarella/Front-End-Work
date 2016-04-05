@@ -1,0 +1,16 @@
+$(document).ready(function()
+{
+	$("#click").click(function()
+	{
+		$("#main").html("Hello!");
+		$("#main").css("background-color","#87CEFA");
+	});
+	$("#btn").click(function()
+	{
+		$("ol").hide();
+	});
+	$("#btn2").click(function()
+	{
+		$("ol").show();
+	})
+});

@@ -1,0 +1,45 @@
+<doctype html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+			Search:<input type="text" placeholder="Searh for people" ng-model="search">
+			<input type="checkbox" ng-model="exactmatch">Exactmatch
+				<table>
+					<thead>
+						<th ng-click="sortData('name')">
+							Name
+							<div ng-class="formatArrow('name')"></div>
+						</th>
+						<th ng-click="sortData('age')">
+							Age
+							<div ng-class="formatArrow('age')"></div>
+						</th>
+						<th ng-click="sortData('dateOfJoining')">
+							dateOfJoining
+							<div ng-class="formatArrow('dateOfJoining')"></div>
+						</th>
+						<th ng-click="sortData('salary')">
+							Salary
+							<div ng-class="formatArrow('salary')"></div>
+						</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="li in lists | orderBy:ordering:sorting |filter:search : exactmatch">
+							<td>{{li.name | uppercase}}</td>
+							<td>{{li.age}}</td>
+							<td>{{li.dateOfJoining | date:"MMM/dd/yyyy"}}</td>
+							<td>{{li.salary |currency:"$"}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

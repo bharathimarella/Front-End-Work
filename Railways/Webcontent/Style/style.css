@@ -1,0 +1,23 @@
+#mainlist 
+{
+	list-style: none;
+}
+.parent 
+{
+	list-style: none;
+	
+}
+.parent ul
+{
+	list-style: none;
+	padding-bottom:20px;
+}
+.child
+{
+	list-style: none;
+	display: inline-block;
+}
+.in
+{
+	
+}

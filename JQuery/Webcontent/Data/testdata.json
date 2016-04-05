@@ -1,0 +1,7 @@
+{
+    "navigation": [{"name":"Home"},
+                   {"name":"About"},
+                   {"name":"Contact"},
+                   {"name":"donate"}
+                  ]
+}

@@ -1,0 +1,30 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+		<script type="text/javascript" src="Home/homeController.js"></script>
+		<script type="text/javascript" src="Home/homeModule.js"></script>
+	</head>
+	<body>
+		<div ng-app="myApp">
+			<p>Select your State</p>
+			<ul  ng-init="state='Illinois'">
+				<li><input type="radio" ng-model="state" value="Illinois">Illinois</li>
+				<li><input type="radio" ng-model="state" value="Florida">Florida</li>
+				<li><input type="radio" ng-model="state" value="Delaware">Delaware</li>
+				<li><input type="radio" ng-model="state" value="Newyork">Newyork</li>
+			</ul>
+			<p>entername</p>
+			<input type="text" ng-model="e"></input>
+			<p>Welcome{{e}}</p>
+			<p>Your state is {{state}}</p>
+			<br>
+			{{{name:"bharathi",age:"26",country:"India"} .name}}
+			<br>
+			{{["index 0","index 1","index 2"][1]}}
+			<br>
+			{{[{name:"bharathi",age:"26",country:"India"},{name:"b",age:"26",country:"India"}] [1].name}}
+		</div>
+	</body>
+</html>

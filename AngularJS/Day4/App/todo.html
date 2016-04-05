@@ -1,0 +1,36 @@
+<doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/todo.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/todo.css">
+	</head>
+	<body>
+		<div ng-app="myModule" class="container">
+			<div ng-controller="myController" class="row">
+				<div class="table-responsive">
+					<table class="col-xs-6 col-sm-6 col-md-6 col-lg-6 table">
+						<tr ng-repeat="li in list">
+							<td ng-class="{'strike':checked}" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+								style="font-weight: bold">
+								<input type="checkbox" ng-model="checked">
+								{{li}}
+							</td>
+							<td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<button ng-disabled="!checked" ng-click="delete(li)">Delete</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div style="text-align:center;font-weight: bold"class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					Add ToDo<br><input type="text" ng-model="newitem">
+					<button ng-click="add(newitem)">Add</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

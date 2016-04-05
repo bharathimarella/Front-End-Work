@@ -1,0 +1,18 @@
+<table>
+	<thead>
+		<th ng-click="sortColumn('name')">Name</th>
+		<th ng-click="sortColumn('age')">Age</th>
+		<th ng-click="sortColumn('gender')">Gender</th>
+		<th ng-click="sortColumn('dateofjoining')">dateOfJoining</th>	
+		<th ng-click="sortColumn('salary')">Salary</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="li in lists |filter:search |orderBy:order:sorting" >
+			<td>{{li.name | uppercase}}<br><img ng-src="{{images[$index]}}" id="pic"></td>
+			<td>{{li.age}}</td>
+			<td>{{li.gender | gender}}
+			<td>{{li.dateOfJoining | date:"MMM/dd/yyyy"}}</td>
+			<td>{{li.salary |currency:"$"}}</td>
+		</tr>
+	</tbody>					
+</table>

@@ -1,0 +1,36 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+		<script type="text/javascript" src="Script/filter.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+			<input type="checkbox" ng-model="mask">Mask age</input>
+				<table>
+					<thead>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Gender</th>
+						<th>dateOfJoining</th>	
+						<th>Salary</th>
+						</thead>
+					</thead>
+					<tbody>
+						<tr ng-repeat="li in lists" >
+							<td>{{li.name | uppercase}}</td>
+							<td ng-hide="mask">{{li.age}}</td>
+							<td ng-show="mask">**</td>
+							<td>{{li.gender | gender}}
+							<td>{{li.dateOfJoining | date:"MMM/dd/yyyy"}}</td>
+							<td>{{li.salary |status}}</td>
+						</tr>
+					</tbody>					
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

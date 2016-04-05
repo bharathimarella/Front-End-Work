@@ -1,0 +1,42 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+			
+			<!..<img ng-src={{show.poster}} alt="{{show.name+'poster'}}"
+			<!...alt display the text which is assigned to it incase of error in uploading image>
+				<table>
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Gender</th>
+							<th>Pay</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="e in employees">
+							<td>{{e.Firstname}}</td>
+							<td>{{e.Lastname}}</td>
+							<td>{{e.Gender}}</td>
+							<td>{{e.Pay}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul>
+					<li ng-repeat="c in cars">
+						{{c.Brand}} index={{$index}} {{$first}}
+						<ul ng-repeat="m in c.models">
+							<li>{{m.name}}parentIndex={{$parent.$index}} index={{$index}} {{$middle}}</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

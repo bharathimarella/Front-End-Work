@@ -1,0 +1,11 @@
+<ul ng-repeat="li in lists |filter:search |orderBy:order:sorting:images">
+	<li ng-click="sortColumn('name')">{{li.name}}
+		<img ng-src="{{images[$index]}}" id="pic">
+		<ul>
+			<li ng-click="sortColumn('age')">Age={{li.age}}</li>
+			<li ng-click="sortColumn('gender')">Gender={{li.gender |gender}}</li>
+			<li ng-click="sortColumn('dateofjoining')">DateOfJoining={{li.dateOfJoining}}</li>
+			<li ng-click="sortColumn('salary')">Salary={{li.salary |currency:"$"}}</li>
+		</ul>
+	</li>
+</ul>

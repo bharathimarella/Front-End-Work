@@ -1,0 +1,177 @@
+@media(max-width:767px){
+	.main
+	{
+		
+    	margin-top: 5%;
+    	font-size: 80%;
+	}
+}
+@media (min-width:768px){
+	.main
+	{
+		
+    	margin-top: 4%;
+    	
+
+	}
+}
+@media(min-width:992px){
+	.main
+	{
+		margin-left: 6%;
+    	margin-top: 4%;
+    	margin-right: 6%;
+	}
+}
+@media(min-width:1200px){
+	.main
+	{
+		margin-left:17%;
+		margin-top:3%;
+		margin-right:16%;
+	}
+}
+#image
+{
+	background-image:url("../Image/adv_logo_hd.gif");
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+}
+#subtitle
+{
+	margin-top: 4%;
+	margin-left: 56%;
+}
+.country
+{
+	margin-top:1%;
+
+}
+.language
+{
+	margin-top:1%;
+	
+}
+#list
+{
+	
+	font-size:100%
+}
+.searchbutton
+{
+	margin-top: 1%;
+}
+#search
+{
+	height:21px;
+	width: 100%;
+	background-image: url("../Image/search_btn.gif");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#nav1 {
+    height: 28px; 
+    
+    background-color: #f2f1f2;
+    
+}
+#nav1 li a:hover
+{
+	background-color:transparent; 
+
+}
+#nav1 li a
+{
+	height: 28px;
+	color: black;
+	padding-top:2%;
+	padding-left:3%;
+	font-size:70%;
+}
+#nav2
+{
+	height: 28px; 
+    
+    background-color: #f2f1f2;
+    margin-top: 1%;
+
+
+}
+#nav2 li a:hover
+{
+	background-color:transparent; 
+	
+}
+#nav2 li a
+{
+	height: 28px;
+	color: black;
+	padding-top:3%;
+	padding-left:3%;
+	font-size:70%;
+}
+.n
+{	display: inline-block;
+	background-image: url("../Image/resStepDivider.gif"),url("../Image/resStepDividerActive.gif");
+	background-repeat: no-repeat;
+	background-position:left,right;
+}
+#nav2 li
+{
+	background-color: white;
+}
+.right
+{	
+	display: inline-block;
+	background-color: #e2f0f5;
+}
+.tab
+{
+	
+	padding: 0px 0px 0px 0px;
+}
+.table-striped tr
+{
+	
+	
+	padding: 0px 0px 0px 0px;
+}
+
+.amt{
+	font-size: 10px;
+	
+}
+.button{
+	color: #e2f0f5;
+	font-size:80%;
+}
+.col2{
+	
+	height: 60%;
+}
+.text
+{
+	font-size: 90%;
+	padding-left: 10%;
+}
+.col3{
+	margin-left: 0px;
+	height: 10%;
+}
+.col3a
+{
+	height:20%;
+}
+.img{
+	
+	background-image: url("../Image/offer.gif");
+	font-size: 80px;
+	color: white;
+	font-family: arial;
+	background-size: 100% 100%;
+
+}
+.footer
+{
+	border:1px solid red;
+}

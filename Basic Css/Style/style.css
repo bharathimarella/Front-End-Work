@@ -1,0 +1,48 @@
+body{
+	background-color:cyan;
+	
+}
+#container{
+	
+border:10px solid #F5A9A9; 
+width:50%;
+height: 400px;
+margin: 2%;
+}
+#header{
+border:10px double #D7DF01; 
+width:90%;
+height: 30%;	
+margin: 100px 10px 10px 30px;
+}
+#block{
+	border:10px ridge #FF0080 ;
+	width: 40%;
+	height: 60%;
+	margin: 20px 10px 10px 30px;
+}
+.box{
+	
+	display: inline-block;
+	border:10px solid #0000FF;
+	width: 100px;
+	height:100px;
+	
+	margin-left:10px;
+}
+.box.first{
+background: yellow;
+}
+.box.sec{
+background: orange;	
+}
+.box.thrd{
+background: green;	
+}
+#footer{
+	
+	border: 5px solid #FF0080;
+	width :50%;
+	height: 120px;
+	margin: 2%;
+}

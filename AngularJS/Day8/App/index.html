@@ -1,0 +1,23 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+		<script type="text/javascript" src="Script/filter.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+				ViewOption :
+				<select ng-model="showTable">
+					<option value="table.html">Table</option>
+					<option value="list.html">List</option>
+				</select>
+				Search here:<input ng-model="search">
+                <div ng-include="showTable"></div>
+                
+			</div>
+        </div>
+	</body>
+    </html>

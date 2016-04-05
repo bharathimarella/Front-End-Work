@@ -1,0 +1,27 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+				<table>
+					<thead>
+						<th>name</th>
+						<th>Number of votes</th>
+						<th>votes</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="candi in candidates">
+							<td>{{candi.name}}</td>
+							<td>{{candi.votes}}</td>
+							<td><button ng-click="increment(candi)">vote</button></td>
+						</tr>
+					</tbody>
+				</table>
+			
+		</div>
+	</body>
+</html>

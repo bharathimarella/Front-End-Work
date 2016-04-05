@@ -1,0 +1,11 @@
+.bar li {
+	float: left;
+	list-style: none;
+	padding:5px 0 0 10px;
+}
+
+.bar li:hover {
+	text-decoration: underline;
+	background-color: black;
+	color:white;
+}

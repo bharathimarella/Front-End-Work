@@ -1,0 +1,17 @@
+{ "rail":[{"name":"RailwayOne","selected":"false","stations":[{"name":"Station1","selected":"false"},
+																	{"name":"station2","selected":"false"}]},
+				{"name":"RailwayTwo","selected":"false","stations":[{"name":"Station1","selected":"false"},
+																	{"name":"station2","selected":"false"}]},
+				{"name":"RailwayThree","selected":"false","stations":[{"name":"Station1","selected":"false"},
+																	{"name":"station2","selected":"false"}]},
+				{"name":"RailwayFour","selected":"false","stations":[{"name":"Station1","selected":"false"},
+																	{"name":"station2","selected":"false"}]},
+				{"name":"RailwayFive","selected":"false","stations":[{"name":"Station1","selected":"false"},
+																	{"name":"station2","selected":"false"}]},
+				{"name":"RailwaySix","selected":"false","stations":[{"name":"Station1","selected":"false"},
+																	{"name":"station2","selected":"false"}]}
+	
+
+				
+				]
+			}

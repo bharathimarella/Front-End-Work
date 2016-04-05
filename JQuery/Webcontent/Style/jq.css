@@ -1,0 +1,154 @@
+#target
+{
+	width:100px;
+	height:100px;
+	border:1px dashed lime;
+	border-radius:50%;
+	box-shadow:3px 3px 5px 6px #ccc; 
+}
+/*-------------------------------------*/
+#main
+{
+	width:100px;
+	height:20px;
+	border:1px solid;
+	box-shadow:outset 0 0 10px #000000;
+}
+/*-------------------------------------*/
+#main2
+{
+	width:100px;
+	height:100px;
+	border:1px dotted lime;
+	box-shadow:5px 5px 5px rgba(68,68,68,0.6);
+	box-sizing:border-box; 
+	transform: rotateX(180deg);
+}
+/*-------------------------------------*/
+.info
+{
+	width:100px;
+	height:100px;
+	background:#FFA000;
+	border:10px double lightgreen;
+	border-radius:25px 5px 25px 5px;
+	float:left;
+}
+/*-------------------------------------*/
+.8q {
+  border-collapse:collapse;
+  border-spacing:3px; 
+}
+/*questio 15*/
+.bdr
+{
+width:420px;
+height:350px;
+border:1px dashed pink;
+float:left;
+border-radius:5px/10px;
+margin:20px 20px 20px 20px;
+border-color:red;
+}
+.it
+{
+font-weight:italic;
+}
+.sv
+{
+background-color:purple;
+width:100px;
+height:40px;
+border-radius:3px;
+font-weight:bold;
+}
+.disp
+{
+display:inline;
+}
+ 
+/*-------------------------------------*/
+#img21{
+	height:400px;
+	width:400px;
+	border:1px double;
+	border-radius:40px 5px 40px 5px;
+}
+#myImg{
+	height:400px;
+	width:400px;
+	border:1px dashed;
+	border-radius:40px 5px 40px 5px;
+}
+/*-------------------------------------*/
+
+#q16
+{
+	width:200px;
+	height:216px; 
+	border:1px solid transparent; 
+	border-radius:20px/10px;
+}
+#q16a
+{
+	width:200px;
+	height:50px;
+	border:1px solid; 
+	border-radius:20px/10px;
+	background-color:lime;
+}
+#minus
+{
+	width:50px; 
+	height:30px; 
+	margin:10px 0px 10px 10px;
+	border-radius:50%; 
+	background-color:orange;
+}
+#plus{
+	width:50px; 
+	height:30px; 
+    margin:10px 0px 10px 10px;
+	border-radius:50%; 
+	background-color:yellow;
+}
+#q16b
+{
+	width:200px;
+	height:168px; 
+	border:1px solid; 
+	border-radius:20px/10px;
+	background-color:yellow; 
+	float:left;
+}
+.li16
+{
+width:100px;
+height:23px;
+border:1px solid teal;
+text-decoration:none;
+border-radius:10px/5px;
+float:left;
+background-color:turquoise;
+}
+#q16b ul li a 
+{ 
+text-decoration: none; 
+position:relative;
+}
+#q16b ul 
+{
+list-style-type:none;
+text-decoration: none;
+}
+
+#q16b ul li 
+{text-decoration: none;
+float:left;
+}
+/*-------------------------------------*/
+.greet{
+	border:1px solid;
+	width:100px;
+	height:100px;
+}

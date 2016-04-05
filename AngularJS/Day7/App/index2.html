@@ -1,0 +1,48 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main2.js"></script>
+		<script type="text/javascript" src="Script/filter.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+			<b>Enter the  column name:</b>
+			<input type="text" ng-model="input">
+			<input type="radio" ng-model="hide" value=""ng-click="hid(input)">Hide
+			<input type="radio" ng-model="mask" value="" ng-click="mas(input)">Mask</input>
+				<table>
+					<thead>
+						<th ng-hide="name">Name</th>
+						<th ng-show="mname">Name</th>
+						<th ng-hide="age">Age</th>
+						<th ng-show="mage">Age</th>
+						<th ng-hide="gender">Gender</th>
+						<th ng-show="mgender">Gender</th>
+						<th ng-hide="dateofjoining">dateOfJoining</th>
+						<th ng-show="mdateofjoining">dateOfJoining</th>	
+						<th ng-hide="salary">Salary</th>
+						<th ng-show="msalary">Salary</th>
+					</thead>
+					</thead>
+					<tbody>
+						<tr ng-repeat="li in lists">
+							<td ng-hide="name">{{li.name | uppercase}}</td>
+							<td ng-show="mname">**</td>
+							<td ng-hide="age">{{li.age}}</td>
+							<td ng-show="mage">**</td>
+							<td ng-hide="gender" >{{li.gender | gender}}
+							<td ng-show="mgender">**</td>
+							<td ng-hide="dateofjoining">{{li.dateOfJoining | date:"MMM/dd/yyyy"}}</td>
+							<td ng-show="mdateofjoining">**</td>
+							<td ng-hide="salary" >{{li.salary |status}}</td>
+							<td ng-show="msalary">**</td>
+						</tr>
+					</tbody>					
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

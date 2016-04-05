@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main2.js"></script>
+		<script type="text/javascript" src="Script/service.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+				<table border="1px solid black" cellspacing="0">
+					<tbody>
+						<tr>
+							<td>Enter input text</td>
+							<td><input type="text" ng-model="input"></td>
+						</tr>
+						<tr>
+							<td>Output</td>
+							<td><input type="text" ng-model="output"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button ng-Click="transform(input)">Process</button></td>
+						</tr>
+					</tbody>
+				</table>
+            </div>
+        </div>
+	</body>
+    </html>

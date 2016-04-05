@@ -1,0 +1,7 @@
+#container{
+	border: 10px ridge lime;
+	width: 500px;
+	height:500px;
+	margin: 50px 0px 0px 50px;
+	border-radius:50%;
+}

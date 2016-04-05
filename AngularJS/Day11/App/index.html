@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<!-- <div ng-app="myModule">
+			<div ng-controller="city">
+			{{name}}
+				<div ng-controller="state">
+					{{name}}-{{$parent.name}}
+					<div ng-controller="country">
+						{{name}}
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div ng-app="myModule">
+			<div ng-controller="city as cty">
+			{{cty.name}}
+				<div ng-controller="state as st">
+					{{st.name}}-{{cty.name}}
+					<div ng-controller="country as cntry">
+						{{cntry.name}}-{{st.name}}-{{cty.name}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

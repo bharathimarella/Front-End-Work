@@ -1,0 +1,42 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myController">
+			Number of Rows to be displayed<input type="number" min="0" max="4" ng-model="limit">
+			<p>Select How to sort the list
+			<select ng-model="order">
+				<option value="+name">Name by Ascending order</option>
+				<option value="-name">Name by Descending order</option>
+				<option value="+age">Age by Ascending order</option>
+				<option value="-age">Age by Descending order</option>
+				<option value="+dateOfJoining">Date of joining by Ascending order</option>
+				<option value="-dateOfJoining">Date of joining by Descending order</option>
+				<option value="+salary">Salary by Ascending order</option>
+				<option value="-salary">Salary by Descending order</option>
+			</select>
+			</p>
+				<table>
+					<thead>
+						<th>Name</th>
+						<th>Age</th>
+						<th>dateOfJoining</th>
+						<th>Salary</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="li in lists | limitTo:limit | orderBy:order">
+							<td>{{li.name | uppercase}}</td>
+							<td>{{li.age}}</td>
+							<td>{{li.dateOfJoining | date:"MMM/dd/yyyy"}}</td>
+							<td>{{li.salary |currency:"$"}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="Script/angular.min.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			
+		<div ng-controller="cntrl"><!..ng-controller keeps model and view seperate>
+			
+		</div>
+		<div ng-controller="cntrl2">
+			
+		</div>
+		<div ng-controller="cntrl3" style="background-color:{{clr}}">
+			<p><h1>{{msg}}</h1></p>
+			<p>Firstname={{employee.name}}</p>
+			<p>Designation={{des[0]}}</p>
+			<p>Company={{cmpny[1].name}}</p>
+		 
+		</div>
+
+		
+	</div>
+		
+	</body>
+</html>

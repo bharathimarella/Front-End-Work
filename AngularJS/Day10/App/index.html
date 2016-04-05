@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>
+		<script type="text/javascript" src="Script/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<nav id="header"><h1 style="text-align: center ; font-size: 50px">PRO-TEK CONSULTING</h1>
+			</nav>
+			<div id="left">
+				<p><a href="#/home">HOME</a></p>
+				<p><a href="#/course">COURSES</a></p>
+				<p><a href="#/student">STUDENTS</a></p>
+			</div>
+			<div id="content">
+				<ng-view></ng-view>
+			</div>
+			<footer id="footer" style="font-size:20px">
+				Footer
+			</footer>
+			</div>
+	</body>
+</html>
