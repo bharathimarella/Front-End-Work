@@ -1,0 +1,458 @@
+body
+{
+    font-weight: 300;
+    line-height: 1.6em;
+}
+/*Header CSS*/
+.navbar
+{
+    background-color:#1891EC;
+    min-height: 105px;
+    margin-bottom: 0px;
+}
+img
+{
+    max-width:100%;
+}
+.navbar-brand
+{
+    color: #222;
+	text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1em;
+	letter-spacing: -1px;
+    margin-top:0px;
+    padding: 0 0 0 15px;
+}
+.icon-bar
+{
+    background-color:white;
+}
+p
+{
+    text-align:center;
+    margin: 27px 14px 49px;
+}
+a:active
+{
+    outline:0;
+}
+.navbar-nav>li>a
+{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav>li>a:hover
+{
+    text-decoration:underline;
+    background:transparent;
+}
+.nav>li>a:visited
+{
+    background-color:#1891EC;
+}
+.changeBr
+{
+    border: 1px dotted;
+    border-color:darkgrey;
+/*    border-radius: 5px 5px 5px 5px;*/
+}
+.myclass
+{
+ text-decoration: underline;   
+}
+.navbar-collapse ul.navbar-nav
+{
+    float: right;
+    margin-right: 0;
+}
+@media (min-width: 768px)
+{
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header
+    {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 767px)
+{
+    .navbar-collapse ul.navbar-nav
+    {
+        float:left;
+    }
+}
+.dropdown-menu
+{
+    text-transform: uppercase;
+    
+}
+.dropdown-menu>li>a:hover
+{
+    background: #1891EC;
+    color:white;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+{
+    background-color:#1891EC;
+}
+.dropdown-menu>li>a:visited,.dropdown-menu>li>a:selected
+{
+      background-color:#1891EC;
+}
+                                            /*Header CSS Completed*/
+/*Homepage*/
+/*
+inspired from http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*  
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right
+    {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left
+    {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active
+    {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item
+{
+    height: 100%;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img
+{
+    width: 100%;
+}
+#banner
+{
+	width: 100%;
+	background:#000;
+	position:relative;
+	margin:0;
+	padding:0;
+}
+.testimonial-solid
+{
+    padding: 20px 0 20px 0;
+    margin: 0 0 0 0;
+    background: #FFFFFF;
+    text-align: center;
+}
+.testi-icon-area
+{
+    text-align: center;
+    position: absolute;
+    top: -84px;
+    margin: 0 auto; 
+    width: 100%;
+}
+.testi-icon-area .quote
+{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 0;
+    background: #ffffff;
+    text-align: center;
+    color: #1891EC;
+    display: inline-table;
+    width: 70px;
+    height: 70px;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 42px; 
+    border: 1px solid #1891EC;
+    display: none;
+}
+.testi-icon-area .carousel-inner
+{ 
+    margin: 20px 0;
+}
+.carousel-indicators
+{
+    bottom: -30px;
+}
+.text-center img
+{
+    margin: auto;
+}
+.aboutUs
+{
+    padding:20px 0 0;
+    background: #F2F2F2;
+}
+img.img-center
+{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+/* Testimonial
+----------------------------------*/
+.testimonial-area
+{
+    padding: 0 0 0 0;
+    margin:0;
+/*    background: url(../Images/low-poly01.html) fixed center center;*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+.testimonial-solid p
+{
+    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+    font-style: italic;
+} 
+section.callaction
+{
+	background:#fff;
+	padding:25px 0 0 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2em;
+    
+}
+#inner>.item>a>img, #inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img
+{
+    width: 19%;
+}
+#inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img
+{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+.aligncenter{
+	text-align:center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+.aligncenter span{
+	margin-left:0;
+}
+                                                /*Home page completed*/
+                                                /*scrollup*/
+.scrollup{
+    position:fixed;
+	width:32px;
+	height:32px;
+    bottom:0px;
+    right:20px;
+    background: #177EC1;
+	
+}
+
+a.scrollup {
+	outline:0;
+	text-align: center;
+}
+
+a.scrollup:hover,a.scrollup:active,a.scrollup:focus {
+	opacity:1;
+	text-decoration:none;
+}
+a.scrollup i {
+	margin-top: 10px;
+	color: #fff;
+}
+a.scrollup i:hover {
+	text-decoration:none;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ 
+/*
+.absolute{
+	position:absolute;
+}
+
+.relative{
+	position:relative;
+}
+*/
+                                            /*Footer*/
+#sub-footer
+{
+	text-shadow:none;
+	color:darkgrey;
+	padding:0;
+	padding-top:30px;
+    padding-bottom:30px;
+	margin:20px 0 0 0;
+	background: #000000;
+}
+#sub-footer p
+{
+	margin:0;
+	padding:0;
+}
+#sub-footer span a
+{
+	color:#f5f5f5;
+}
+.copyright
+{
+	text-align:left;
+	font-size:12px;
+}
+#sub-footer ul.social-network
+{
+	float:right;
+}
+                                            /*Who.html*/
+pageTitle
+{
+margin: 30px 0 3px;
+}
+#inner-headline{
+background: #EFEFEF;
+position: relative;
+margin: 0;
+padding:12px 0px 22px 0px;
+color: #1891EC;
+}
+#inner-headline h2.pageTitle{
+	color:#1891EC;
+	padding: 5px 0;
+	text-align:center;
+	display:block;
+    font-size: 2.3em;
+    font-weight: 700;
+    
+}
+#inner-headline ul.breadcrumb {
+	margin:40px 0;
+	float:left;
+}
+
+#inner-headline ul.breadcrumb li {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#inner-headline ul.breadcrumb li {
+	font-size:13px;
+	color:#fff;
+}
+
+#inner-headline ul.breadcrumb li i{
+	color:#dedede;
+}
+
+#inner-headline ul.breadcrumb li a {
+	color:#fff;
+}
+
+ul.breadcrumb li a:hover {
+	text-decoration:none;
+}
+.container {
+	padding:0 20px 0 20px;
+	position:relative;
+}
+
+#content {
+	position:relative;
+	background:#fff;
+	padding:90px 0 180px 0;
+	min-height:500px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2em
+}
+
+#content img {
+    max-width: 1500px;
+    height: 386px;
+    width: 1134px;
+    max-height: 700px;
+}
+.entry-content p
+{
+    text-align: justify;
+    margin: 0px 0px 10px;
+    font-size: 16px;
+    line-height: 2em;
+    font-weight: 500;
+}
+ 
+
+                                                    /*End of Who.html*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+                                                        /*Contactus*/
+.contactText
+{
+    text-align: justify;
+    margin: 0 12px 12px;
+}
+.rotate180
+{
+    
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-left:163px;
+    margin-bottom:80px;
+}
+
+.whatP
+{
+    text-align:justify;
+    margin: 19px 1px 30px;
+}
+

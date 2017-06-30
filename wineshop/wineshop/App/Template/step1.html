@@ -1,0 +1,18 @@
+<form novalidate class="css-form" style="font-size:23px">
+   <p>First Name</p>
+   <input type="text"class="formInput" ng-model="fname" uib-tooltip="Please enter the First name"tooltip-trigger="focus"
+          tooltip-placement="right" required />
+   <p>Last Name</p>
+   <input type="text"  class="formInput"ng-model="lname"uib-tooltip="Please enter the First name"tooltip-trigger="focus"
+          tooltip-placement="right" required/>
+   <p>Email</p>
+   <input type="email"  class="formInput"ng-model="iemail"uib-tooltip="Please enter the First name"tooltip-trigger="focus"
+          tooltip-placement="right" required/>
+   <p>Phone</p>
+   <input type="tel"pattern="[0-9]{10}"  class="formInput"ng-model="phone" uib-tooltip="Please enter the  First name" 
+          tooltip-trigger="focus" tooltip-placement="right"  required/>
+   <br><br>
+   <p><button type="submit" class="formInput"ng-click="goToStep2(fname,lname,phone)"
+              ng-disabled="!(!!fname && !!lname  && !!iemail && !!phone)">Next</button></p>
+</form>
+   				
