@@ -1,0 +1,31 @@
+<form  style="font-size:23px">
+  <p>Shipping Location</p>
+  <span uib-dropdown on-toggle="toggled(open)" >
+    <div id="simple-dropdown" uib-dropdown-toggle >
+    	<span ng-hide="hide">Select Location</span><span>{{lctn}}</span>
+    	<span class="caret"></span>
+    </div>
+		<ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+    	<li ng-repeat="location in locations">
+        <a href ng-model="loc" ng-click="getlctn(location)" ><b>{{location}}</b></a>
+      </li>
+    </ul>
+  </span>
+  <br>
+  <p>Average Monthly Sales</p>
+  <input type="text" style="margin-bottom:20px" pattern="[0-9]"ng-model="msales"
+        uib-tooltip="Please enter the Average monthly sales in USD" tooltip-trigger="focus" tooltip-placement="right" required/>
+  <br>
+  <p>Quantity required per month</p>
+  <input type="text" pattern="[0-9]"style="margin-bottom:20px"ng-model="mstock"
+        uib-tooltip="Please enter the quantity of products required monthly  in cases" 
+        tooltip-trigger="focus" tooltip-placement="right" required/>
+  <br>
+  <p>License Number</p>
+  <input type="text" ng-model="license"style="margin-bottom:20px"
+          uib-tooltip="Please enter the licenses number" tooltip-trigger="focus"
+          tooltip-placement="right" required/>
+  <br><br>
+  <p><button ng-click="goToStep3(loc,msales,mstock,license)"ng-disabled="!(!!lctn && !!license)">Next
+  </button></p>
+</form>

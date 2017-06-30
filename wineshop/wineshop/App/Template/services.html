@@ -1,0 +1,19 @@
+<div class="menuList">
+  <h2 style="margin-left:379px">Please Fill the form for product supply service !!!</h2> 
+  <div id="formcontainer">
+    <uib-tabset active="active" justified="true">
+								<!-- STEP 1 -->
+   		<uib-tab index="0" heading="STEP1"  >
+   			<div class="form"  ng-include="showStep1" ></div>
+   		</uib-tab>
+   							<!-- STEP 2 -->
+    	<uib-tab index="1" heading="STEP2"  disable="pop1.disabled" active="">
+    		<div class="form"  ng-include="showStep2" ></div>
+    	</uib-tab>
+    							<!-- STEP 3 -->
+    	<uib-tab index="2" heading="STEP3"  disable="pop2.disabled"active="" >
+    		<div class="result"  ng-include="showStep3"></div>
+      </uib-tab>
+  	</uib-tabset>
+  </div>
+</div>
